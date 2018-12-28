@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA56C227-0FD4-49C5-81BF-69513BCFBFB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThirtyFiveG.DbEntity.Portable</RootNamespace>
+    <AssemblyName>ThirtyFiveG.DbEntity.Portable</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile24</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Common\DbEntitiesComparer.cs">
+      <Link>Common\DbEntitiesComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Common\DbEntityDataBinder.cs">
+      <Link>Common\DbEntityDataBinder.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Common\DbEntityJsonConvert.cs">
+      <Link>Common\DbEntityJsonConvert.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Common\DbEntityRecursion.cs">
+      <Link>Common\DbEntityRecursion.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Common\DbEntityRepository.cs">
+      <Link>Common\DbEntityRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Common\DbEntityUtilities.cs">
+      <Link>Common\DbEntityUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\BaseDbEntity.cs">
+      <Link>Entity\BaseDbEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\DbEntityAssociativeCollectionManager.cs">
+      <Link>Entity\CollectionManagers\DbEntityAssociativeCollectionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\DbEntityAssociativeCollectionUtilities.cs">
+      <Link>Entity\CollectionManagers\DbEntityAssociativeCollectionUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\DualDbEntityAssociativeCollectionManager.cs">
+      <Link>Entity\CollectionManagers\DualDbEntityAssociativeCollectionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\ForeignEntityCollectionManager.cs">
+      <Link>Entity\CollectionManagers\ForeignEntityCollectionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\IDbEntityAssociativeCollectionManager.cs">
+      <Link>Entity\CollectionManagers\IDbEntityAssociativeCollectionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\IDualDbEntityAssociativeCollectionManager.cs">
+      <Link>Entity\CollectionManagers\IDualDbEntityAssociativeCollectionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\CollectionManagers\IForeignEntityCollectionManager.cs">
+      <Link>Entity\CollectionManagers\IForeignEntityCollectionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\EntityState.cs">
+      <Link>Entity\EntityState.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\IDbEntity.cs">
+      <Link>Entity\IDbEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\IDbEntityBasic.cs">
+      <Link>Entity\IDbEntityBasic.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Entity\WrapperEntity.cs">
+      <Link>Entity\WrapperEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Event\DbEntityPropertyChangedEventArgs.cs">
+      <Link>Event\DbEntityPropertyChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Extensions\DbEntityExtensions.cs">
+      <Link>Extensions\DbEntityExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Extensions\Portable\DbEntityQueryableExtensions.cs">
+      <Link>Extensions\DbEntityQueryableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntitiesLogEntry.cs">
+      <Link>Logging\DbEntitiesLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntitiesPersistedLogEntry.cs">
+      <Link>Logging\DbEntitiesPersistedLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntityActionCommandLogEntry.cs">
+      <Link>Logging\DbEntityActionCommandLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntityEmailSentLogEntry.cs">
+      <Link>Logging\DbEntityEmailSentLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntityLogEntry.cs">
+      <Link>Logging\DbEntityLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntityPersistedLogEntry.cs">
+      <Link>Logging\DbEntityPersistedLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntityPropertiesValuesLogEntry.cs">
+      <Link>Logging\DbEntityPropertiesValuesLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Logging\DbEntityPropertyChangedLogEntry.cs">
+      <Link>Logging\DbEntityPropertyChangedLogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\Data\DataBundle.cs">
+      <Link>Query\Data\DataBundle.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\Data\DbEntityDataBundle.cs">
+      <Link>Query\Data\DbEntityDataBundle.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\Data\IDataBundle.cs">
+      <Link>Query\Data\IDataBundle.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\Data\IDbEntityDataBundle.cs">
+      <Link>Query\Data\IDbEntityDataBundle.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\DbEntityActionMessage.cs">
+      <Link>Query\DbEntityActionMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\EntityActionsResult.cs">
+      <Link>Query\EntityActionsResult.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\Generic\QueryBundle.cs">
+      <Link>Query\Generic\QueryBundle.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\IDataAccessLayer.cs">
+      <Link>Query\IDataAccessLayer.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Query\QueryBundle.cs">
+      <Link>Query\QueryBundle.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Tracking\IPropertyChangeTracker.cs">
+      <Link>Tracking\IPropertyChangeTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Tracking\IPropertyValidator.cs">
+      <Link>Tracking\IPropertyValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Tracking\PropertyChange.cs">
+      <Link>Tracking\PropertyChange.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Tracking\PropertyChangeTracker.cs">
+      <Link>Tracking\PropertyChangeTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Validation\Generic\ValidationRule.cs">
+      <Link>Validation\Generic\ValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Validation\IValidationRule.cs">
+      <Link>Validation\IValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\ThirtyFiveG.DbEntity\Validation\ValidationRule.cs">
+      <Link>Validation\ValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Aq.ExpressionJsonSerializer.Portable, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aq.ExpressionJsonSerializer.Portable.0.1.0\lib\portable40-net45+sl5+win8+wp8\Aq.ExpressionJsonSerializer.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\11\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PropertyChanged, Version=1.53.0.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>..\packages\PropertyChanged.Fody.1.53.0\lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=1.5.11.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+sl5+win8+wp8+wpa81\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+sl5+win8+wp8+wpa81\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+sl5+win8+wp8+wpa81\System.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThirtyFiveG.Commons, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThirtyFiveG.Commons.0.1.0\lib\portable40-net45+sl5+win8+wp8\ThirtyFiveG.Commons.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThirtyFiveG.DbEntity.Projection, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\ThirtyFiveG.DbEntity\packages\ThirtyFiveG.DbEntity.Projection.0.1.0\lib\portable40-net45+sl5\ThirtyFiveG.DbEntity.Projection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThirtyFiveG.Validation, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\ThirtyFiveG.DbEntity\packages\ThirtyFiveG.Validation.0.1.0\lib\portable40-net45+sl5\ThirtyFiveG.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\Fody.2.0.6\build\portable-net+sl+win+wpa+wp\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.2.0.6\build\portable-net+sl+win+wpa+wp\Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Fody.2.0.6\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.2.0.6\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EBC9526-A866-43A8-AD5A-8CF09D9A5B2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThirtyFiveG.DbEntity</RootNamespace>
+    <AssemblyName>ThirtyFiveG.DbEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aq.ExpressionJsonSerializer.Portable, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aq.ExpressionJsonSerializer.Portable.0.1.0\lib\portable40-net45+sl5+win8+wp8\Aq.ExpressionJsonSerializer.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PropertyChanged, Version=1.53.0.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>..\packages\PropertyChanged.Fody.1.53.0\Lib\netstandard10\PropertyChanged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThirtyFiveG.Commons, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThirtyFiveG.Commons.0.1.0\lib\portable40-net45+sl5+win8+wp8\ThirtyFiveG.Commons.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThirtyFiveG.DbEntity.Projection, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ThirtyFiveG.DbEntity.Projection.0.1.0\lib\portable40-net45+sl5\ThirtyFiveG.DbEntity.Projection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThirtyFiveG.Validation, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ThirtyFiveG.Validation.0.1.0\lib\portable40-net45+sl5\ThirtyFiveG.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DbEntitiesComparer.cs" />
+    <Compile Include="Common\DbEntityDataBinder.cs" />
+    <Compile Include="Common\DbEntityJsonConvert.cs" />
+    <Compile Include="Common\DbEntityRecursion.cs" />
+    <Compile Include="Common\DbEntityRepository.cs" />
+    <Compile Include="Common\DbEntityUtilities.cs" />
+    <Compile Include="Query\Parallel\ParallelQuery.cs" />
+    <Compile Include="Query\Parallel\ParallelQueryUtilities.cs" />
+    <Compile Include="Entity\BaseDbEntity.cs" />
+    <Compile Include="Entity\CollectionManagers\DbEntityAssociativeCollectionManager.cs" />
+    <Compile Include="Entity\CollectionManagers\DbEntityAssociativeCollectionUtilities.cs" />
+    <Compile Include="Entity\CollectionManagers\DualDbEntityAssociativeCollectionManager.cs" />
+    <Compile Include="Entity\CollectionManagers\ForeignEntityCollectionManager.cs" />
+    <Compile Include="Entity\CollectionManagers\IDbEntityAssociativeCollectionManager.cs" />
+    <Compile Include="Entity\CollectionManagers\IDualDbEntityAssociativeCollectionManager.cs" />
+    <Compile Include="Entity\CollectionManagers\IForeignEntityCollectionManager.cs" />
+    <Compile Include="Entity\DbFunctions.cs" />
+    <Compile Include="Entity\EntityState.cs" />
+    <Compile Include="Entity\IDbEntity.cs" />
+    <Compile Include="Entity\IDbEntityBasic.cs" />
+    <Compile Include="Entity\WrapperEntity.cs" />
+    <Compile Include="Event\DbEntityPropertyChangedEventArgs.cs" />
+    <Compile Include="Extensions\AssociationTypeExtensions.cs" />
+    <Compile Include="Extensions\DbContextExtensions.cs" />
+    <Compile Include="Extensions\DbEntityExtensions.cs" />
+    <Compile Include="Extensions\DbEntityQueryableExtensions.cs" />
+    <Compile Include="Extensions\Portable\DbEntityQueryableExtensions.cs" />
+    <Compile Include="Extensions\QueryableExtensions.cs" />
+    <Compile Include="Logging\DbEntitiesLogEntry.cs" />
+    <Compile Include="Logging\DbEntitiesPersistedLogEntry.cs" />
+    <Compile Include="Logging\DbEntityActionCommandLogEntry.cs" />
+    <Compile Include="Logging\DbEntityEmailSentLogEntry.cs" />
+    <Compile Include="Logging\DbEntityLogEntry.cs" />
+    <Compile Include="Logging\DbEntityPersistedLogEntry.cs" />
+    <Compile Include="Logging\DbEntityPropertiesValuesLogEntry.cs" />
+    <Compile Include="Logging\DbEntityPropertyChangedLogEntry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\Data\DataBundle.cs" />
+    <Compile Include="Query\Data\DbEntityDataBundle.cs" />
+    <Compile Include="Query\Data\IDataBundle.cs" />
+    <Compile Include="Query\Data\IDbEntityDataBundle.cs" />
+    <Compile Include="Query\DbEntityActionMessage.cs" />
+    <Compile Include="Query\EntityActionsResult.cs" />
+    <Compile Include="Query\Generic\QueryBundle.cs" />
+    <Compile Include="Query\IDataAccessLayer.cs" />
+    <Compile Include="Query\QueryBundle.cs" />
+    <Compile Include="Tracking\IPropertyChangeTracker.cs" />
+    <Compile Include="Tracking\IPropertyValidator.cs" />
+    <Compile Include="Tracking\PropertyChange.cs" />
+    <Compile Include="Tracking\PropertyChangeTracker.cs" />
+    <Compile Include="Validation\Generic\ValidationRule.cs" />
+    <Compile Include="Validation\IValidationRule.cs" />
+    <Compile Include="Validation\ValidationRule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.2.0.6\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.2.0.6\build\dotnet\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.2.0.6\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.2.0.6\build\dotnet\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
