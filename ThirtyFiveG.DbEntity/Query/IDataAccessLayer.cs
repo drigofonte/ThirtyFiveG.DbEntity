@@ -28,5 +28,7 @@ namespace ThirtyFiveG.DbEntity.Query
         Task<T> ExecuteQuery<T>(QueryBundle query) where T : class;
         Task PersistDbEntityAction<T>(T entity, int action, IActionData actionData) where T : class, IDbEntity;
         Task Do(IDbEntityDataBundle data);
+        Task Lock<T>(Tuple<string, object>[] keys) where T : class, IDbEntity;
+        Task Unlock<T>(Tuple<string, object>[] keys) where T : class, IDbEntity;
     }
 }
